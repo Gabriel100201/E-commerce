@@ -1,0 +1,117 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    padding: 0 170px 0 170px;
+    margin-top: 90px;
+}
+.section__header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.section__titulo{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.section__link{
+    display: flex;
+    text-decoration: none;
+}
+.link__texto{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0071BC;
+}
+.link__arrow{
+    color: #0071BC;
+    margin-left: 5px;
+}
+.sections__products-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.sections__producto{
+    background-color: inherit;
+    width: 16%;
+    padding: 10px;
+}
+.producto__img{
+    width: 100%;
+}
+.producto__nombre{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4rem;
+    color: #222;
+    margin-top: 10px;
+}
+.producto__precio{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.producto__link{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #0071BC;
+    text-decoration: none;
+}
+.link__titulo{
+    margin-top: 20px;
+}
+
+@media (max-width: 1279px) {
+    .sections__producto{
+        width: 25%;
+    }
+    .section{
+        padding: 0 50px 0 50px;
+    }
+    .sections__producto:nth-child(5){
+        display: none;
+    }
+    .sections__producto:nth-child(6){
+        display: none;
+    }
+}
+@media (max-width: 786px) {
+    .section{
+        padding: 0 20px 0 20px;
+    }
+    .section__titulo{
+        font-size: 1.7rem
+    }
+    .link__texto{
+        font-size: 1rem;
+    }
+    .producto__nombre{
+        font-size: 1rem;
+    }
+    .producto__precio{
+        font-size: 1rem;
+    }
+    .producto__link{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 481px){
+    .sections__products-container{
+        flex-wrap: wrap;
+    }
+    .sections__producto{
+        width: 50%;
+    }
+    .section:nth-child(4) .section__titulo{
+        font-size: 1.3rem;
+    }
+}
+
+
+

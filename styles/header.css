@@ -1,0 +1,116 @@
+body{
+    background-color: #f5f5f5;
+}
+*{
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    background-color: #f5f5f5;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 30px 0;
+}
+.header__logo{
+    height: 60px;
+    margin-left: 170px;
+}
+.header__searcher{
+    background-color: #ddd;
+    padding: 5px 15px 5px 15px;
+    border-radius: 18px;
+    height: 20px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    transition: background-color .4s;
+}
+.header__searcher:hover{
+    background-color: #ccc;
+}
+.searcher__input{
+    border: none;
+    background-color: inherit;
+    width: 100%;
+}
+.searcher__input:focus{
+    border: none;
+    outline: none;
+}
+.searcher__button{
+    background-color: inherit;
+    border: none;
+    width: 35px;
+}
+.searcher__button--mobile{
+    display: none;
+}
+.searcher__lupa{
+    padding: 5px 15px 5px 15px;
+    color: #222;
+    transition: scale .3s; 
+}
+.searcher__lupa:hover{
+    scale: 1.15;
+}
+.header__login-button{
+    margin-right: 170px;
+    height: 45px;
+    width: 120px;
+    border: 2px solid #0071BC;
+    color: #0071BC;
+    font-size: 1rem;
+    font-weight: 100;
+    background-color: inherit;
+    transition: width .5s;
+}
+.header__login-button:hover{
+    width: 150px;
+}
+@media (max-width: 1279px) {
+    .header__logo{
+        margin-left: 50px;
+    }
+    .header__login-button{
+        margin-right: 50px;
+    }
+    .header__searcher{
+        width: 300px;
+    }
+}
+@media (max-width: 769px) {
+    .header__searcher{
+        margin: 0 20px 0 20px;
+    }
+    .header__logo{
+        height: 40px;
+        margin-left: 20px;
+    }
+    .header__login-button{
+        width: 70px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 481px){
+    .header__searcher{
+        display: none;
+    }
+    .searcher__lupa--mobile{
+        display: inline-block;
+    }
+    .header__login-button{
+        width: 90px;
+    }
+    .searcher__button--mobile{
+        display: inline-block;
+        border: none;
+        background-color: inherit;
+        font-size: 1.15rem;
+    }
+    .searcher__button--mobile i{
+        color: #333;
+    }
+}

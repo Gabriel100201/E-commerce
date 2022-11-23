@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <script src="https://kit.fontawesome.com/07c964647a.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<body>
+    
+    <header class="header">
+        <a href="index.html"><img class="header__logo" src="../assets/Recurso 2.svg"></a>
+        <div class="header__searcher">
+            <input class="searcher__input" type="text" placeholder="¿Qué desea buscar?">
+            <button class="searcher__button"><i class="fa-solid fa-magnifying-glass searcher__lupa"></i></button>
+        </div>
+        <button class="header__login-button">Login</button>
+        <button class="searcher__button--mobile"><i class="fa-solid fa-magnifying-glass searcher__lupa"></i></button>
+    </header>
+
+    <section class="log-section">
+        <h2 class="log-section__titulo">Iniciar Sesión</h2>
+        <form class="log-section__form">
+            <input class="form__input" type="text" placeholder="Escriba su correo electronico">
+            <input class="form__input" type="text" placeholder="Escriba su contraseña">
+            <input class="form__button" type="submit" value="Entrar">
+        </form>
+    </section>
+
+    <footer class="footer" id="footer-login">
+        <div class="footer__img-container">
+            <img class="img-container__img" src="../assets/Recurso 2.svg">
+        </div>
+        <div class="footer__lista-bloque">
+            <ul class="lista-bloque__lista">
+                <a href="#">
+                    <li class="lista__el">Quiénes somos</li>
+                </a>
+                <a href="#">
+                    <li class="lista__el">Politica de privaciad</li>
+                </a>
+                <a href="#">
+                    <li class="lista__el">Programa de fidelidad</li>
+                </a>
+                <a href="#">
+                    <li class="lista__el">Nuestras de tiendas</li>
+                </a>
+                <a href="#">
+                    <li class="lista__el">Quiero ser franquisiado</li>
+                </a>
+                <a href="#">
+                    <li class="lista__el">Anúncie aquí</li>
+                </a>
+            </ul>
+        </div>
+        <form class="footer__contact-form">
+            <h4 class="contact-form__titulo">Hable con nosotros</h4>
+            <input class="contact-form__input" type="text" placeholder="Nombre">
+            <input class="contact-form__input" type="text" placeholder="Mensaje">
+            <button class="contact-form__button">Enviar Mensaje</button>
+        </form>
+        <div class="footer__desarrollo">
+            <h4 class="desarollo__texto">Desarrollado por Gabriel Funes. 2022</h4>
+        </div>
+    </footer>
+
+</body>
+</html>

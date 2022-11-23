@@ -1,0 +1,82 @@
+.banner{
+    height: 500px;
+    background-image: url(./../assets/pexels-fabricio-trujillo-54567.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 65%;
+    padding-left: 170px;
+    display: flex;
+    flex-direction: column;
+}
+.banner__titulo{
+    color: #f5f5f5;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 280px;
+}
+.banner__subtitulo{
+    color: #f5f5f5;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.banner__button{
+    height: 45px;
+    width: 120px;
+    border: none;
+    color: #f5f5f5;
+    font-size: 1rem;
+    font-weight: 100;
+    background-color: #0071BC;
+    transition: all .4s;
+    margin-top: 25px;
+    outline: 2px solid #0071BC;
+}
+.banner__button:hover{
+    width: 180px;
+    outline: 2px solid #f5f5f5;
+}
+
+@media (max-width: 1279px) {
+    .banner{
+        padding-left: 50px;
+        height: 400px;
+    }
+    .banner__titulo{
+        margin-top: 190px;
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 769px) {
+    .banner{
+        padding-left: 20px;
+    }
+    .banner__titulo{
+        margin-top: 200px;
+        font-size: 2.7rem;
+    }
+    .banner__subtitulo{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 481px){
+    .banner__titulo{
+        margin-top: 200px;
+        font-size: 2.5rem;
+    }
+    .banner__subtitulo{
+        font-size: 1.2rem;
+    }
+    .banner{
+        align-items: center;
+    }
+}
+@media (max-width: 410px){
+    .banner__titulo{
+        font-size: 2rem;
+    }
+    .banner__subtitulo{
+        font-size: 1rem;
+    }
+}
