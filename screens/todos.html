@@ -151,14 +151,14 @@
         </div>
         <form class="footer__contact-form">
             <h4 class="contact-form__titulo">Hable con nosotros</h4>
-            <input class="contact-form__input" type="text" placeholder="Nombre">
-            <input class="contact-form__input" type="text" placeholder="Mensaje">
+            <span class="contact-form__container"><input class="contact-form__input" type="text" placeholder="Nombre" data-tipo="name" required><h4 class="input__error"></h4></span>
+            <span class="contact-form__container"><input class="contact-form__input" type="email" placeholder="Mensaje" data-tipo="mail" required><h4 class="input__error"></h4></span>
             <button class="contact-form__button">Enviar Mensaje</button>
         </form>
         <div class="footer__desarrollo">
             <h4 class="desarollo__texto">Desarrollado por Gabriel Funes. 2022</h4>
         </div>
     </footer>
-    
+<script src="../validacion.js" type="module"></script>   
 </body>
 </html>
