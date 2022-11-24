@@ -24,6 +24,24 @@
     margin-top: 25px;
     padding: 10px 15px 10px 15px;
 }
+.form__input-container{
+    width: 100%;
+}
+.form__input-error{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #d33;
+    font-size: .9rem;
+    text-align: center;
+    margin-top: 7px;
+}
+.log-section__input--invalid{
+    width: 100%;
+    border: 1px solid #f00;
+    background-color: #ff000011;
+    height: 40px;
+    margin-top: 15px;
+    padding: 5px 15px 5px 15px;
+}
 .form__button{
     height: 50px;
     margin-top: 30px;
@@ -37,6 +55,11 @@
 }
 .form__button:hover{
     width: 100%;
+}
+.form__input-invalid{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #d33;
+    margin-top: 30px;
 }
 #footer-login{
     margin-top: 0px;

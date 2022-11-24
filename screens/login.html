@@ -31,9 +31,10 @@
     <section class="log-section">
         <h2 class="log-section__titulo">Iniciar Sesión</h2>
         <form class="log-section__form">
-            <input class="form__input" type="text" placeholder="Escriba su correo electronico">
-            <input class="form__input" type="text" placeholder="Escriba su contraseña">
-            <input class="form__button" type="submit" value="Entrar">
+            <span class="form__input-container"><input pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required data-tipo="mail" class="form__input log-section__input" type="email" placeholder="Escriba su correo electronico"><h4 class="form__input-error"></h4></span>
+            <span class="form__input-container"><input required data-tipo="password" class="form__input log-section__input" type="password" placeholder="Escriba su contraseña"><h4 class="form__input-error"></h4></span>
+            <input class="form__button-submit form__button" type="submit" value="Entrar">
+            <h4 class="form__input-invalid"></h4>
         </form>
     </section>
 
