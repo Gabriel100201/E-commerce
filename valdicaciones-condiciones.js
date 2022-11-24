@@ -3,11 +3,11 @@ export function valida(input){
     if (input.validity.valid) {
         console.log("input valido")
         input.classList.remove("contact-form__input--invalid");
+        input.parentElement.querySelector(".input__error").innerHTML = "";
     } 
     else { 
-        const error = mostrarMensajeDeError(tipoDeInput, input);
-        console.log(error);
         input.classList.add("contact-form__input--invalid");
+        input.parentElement.querySelector(".input__error").innerHTML = mostrarMensajeDeError(tipoDeInput, input);
     }
 }
 

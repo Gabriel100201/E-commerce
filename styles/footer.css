@@ -41,6 +41,9 @@
     width: 100%;
     font-size: 1.4rem;
 }
+.contact-form__container{
+    width: 100%;
+}
 .contact-form__input{
     width: 100%;
     border: none;
@@ -56,6 +59,13 @@
     height: 40px;
     margin-top: 15px;
     padding: 5px 15px 5px 15px;
+}
+.input__error{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #d33;
+    font-size: .9rem;
+    text-align: center;
+    margin-top: 3px;
 }
 .contact-form__button{
     height: 50px;
