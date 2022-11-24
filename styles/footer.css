@@ -49,6 +49,14 @@
     margin-top: 15px;
     padding: 5px 15px 5px 15px;
 }
+.contact-form__input--invalid{
+    width: 100%;
+    border: 1px solid #f00;
+    background-color: #ff000011;
+    height: 40px;
+    margin-top: 15px;
+    padding: 5px 15px 5px 15px;
+}
 .contact-form__button{
     height: 50px;
     margin-top: 15px;

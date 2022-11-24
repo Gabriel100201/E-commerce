@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles/banner.css">
     <link rel="stylesheet" href="styles/section-todos.css">
     <link rel="stylesheet" href="styles/section-productos.css">
-    <link rel="stylesheet" href="styles/historicos.css">
     <link rel="stylesheet" href="styles/footer.css">
     <script src="https://kit.fontawesome.com/07c964647a.js" crossorigin="anonymous"></script>
     <link rel="icon" href="assets/soccer-ball.png">
@@ -36,11 +35,11 @@
         <section class="banner">
             <h2 class="banner__titulo">Diciembre Promocional</h1>
             <h4 class="banner__subtitulo">Hasta 30% de descuento en balones de Mundiales</h2>
-            <button class="banner__button">Ver Ofertas</button>
+            <a href="#offert"><button class="banner__button">Ver Ofertas</button></a>
         </section>
         <section class="section">
             <div class="section__header">
-                <h2 class="section__titulo">Mundiales</h2>
+                <h2 class="section__titulo" id="offert">Mundiales</h2>
                 <div>
                     <a class="section__link" href="screens/todos.html">
                         <h4 class="link__texto">Ver Todos</h4>
@@ -251,14 +250,14 @@
         </div>
         <form class="footer__contact-form">
             <h4 class="contact-form__titulo">Hable con nosotros</h4>
-            <input class="contact-form__input" type="text" placeholder="Nombre">
-            <input class="contact-form__input" type="text" placeholder="Mensaje">
+            <input class="contact-form__input" type="text" placeholder="Nombre" data-tipo="name" required>
+            <input class="contact-form__input" type="email" placeholder="Mensaje" data-tipo="mail" required>
             <button class="contact-form__button">Enviar Mensaje</button>
         </form>
         <div class="footer__desarrollo">
             <h4 class="desarollo__texto">Desarrollado por Gabriel Funes. 2022</h4>
         </div>
     </footer>
-
+<script src="../validacion.js" type="module"></script>
 </body>
 </html>
