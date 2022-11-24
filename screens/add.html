@@ -71,8 +71,14 @@
         </div>
         <form class="footer__contact-form">
             <h4 class="contact-form__titulo">Hable con nosotros</h4>
-            <span class="contact-form__container"><input class="contact-form__input" type="text" placeholder="Nombre" data-tipo="name" required><h4 class="input__error"></h4></span>
-            <span class="contact-form__container"><input class="contact-form__input" type="email" placeholder="Mensaje" data-tipo="mail" required><h4 class="input__error"></h4></span>
+            <span class="contact-form__container">
+                <input class="contact-form__input" type="text" placeholder="Nombre" data-tipo="name" required  maxlength="40">
+                <h4 class="input__error"></h4>
+            </span>
+            <span class="contact-form__container">
+                <input class="contact-form__input" type="mensaje" placeholder="Mensaje" data-tipo="mensaje" required maxlength="120">
+                <h4 class="input__error"></h4>
+            </span>
             <button class="contact-form__button">Enviar Mensaje</button>
         </form>
         <div class="footer__desarrollo">
