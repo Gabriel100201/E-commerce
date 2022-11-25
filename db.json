@@ -1,0 +1,16 @@
+{
+    "producto": [
+      {
+        "nombre": "Pelota",
+        "precio": "1000",
+        "imagen": "a",
+        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+      },
+      {
+        "nombre": "Pelota",
+        "precio": "1000",
+        "imagen": "a",
+        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+      }
+    ]
+  }
