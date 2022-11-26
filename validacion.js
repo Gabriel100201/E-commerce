@@ -1,8 +1,10 @@
 import { valida } from "./valdicaciones-condiciones.js";
 import { valida2 } from "./valdicaciones-condiciones.js";
+import { valida3 } from "./valdicaciones-condiciones.js";
 
 const inputsForm = document.querySelectorAll(".contact-form__input");
 const inputsLogin = document.querySelectorAll(".log-section__input");
+const inputsAdd = document.querySelectorAll(".add-input")
 const botonLogin = document.querySelector(".form__button-submit");
 
 inputsForm.forEach((inputsForm) => {
@@ -14,6 +16,12 @@ inputsForm.forEach((inputsForm) => {
 inputsLogin.forEach((inputsLogin) => {
     inputsLogin.addEventListener("blur", (inputsLogin) => {
       valida2(inputsLogin.target);
+    });
+  });
+
+  inputsAdd.forEach((inputsAdd) => {
+    inputsAdd.addEventListener("blur", (inputsAdd) => {
+      valida3(inputsAdd.target);
     });
   });
 

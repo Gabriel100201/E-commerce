@@ -38,9 +38,13 @@
 .filtro__ico{
     text-decoration: none;
     color: #333;
+    font-size: 1rem;
 }
 .filtro__link{
     margin: 0 7px 0 7px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
 }
 .filtro__link:nth-child(2){
     margin-right: 5px;

@@ -21,7 +21,18 @@ export function valida2(input){
         input.parentElement.querySelector(".form__input-error").innerHTML = mostrarMensajeDeError(tipoDeInput, input);
     }
 }
-
+export function valida3(input){
+    const tipoDeInput = input.dataset.tipo;
+    if (input.validity.valid) {
+        input.classList.remove("form__input--invalid");
+        input.parentElement.querySelector(".form__input-error").innerHTML = "";
+    } 
+    else { 
+        input.classList.add("form__input--invalid");
+        console.log(mostrarMensajeDeError(tipoDeInput, input));
+        input.parentElement.querySelector(".form__input-error").innerHTML = mostrarMensajeDeError(tipoDeInput, input);
+    }
+}
 const tipoDeErrores = [
     "valueMissing",
     "typeMismatch",
@@ -42,6 +53,12 @@ const mensajesDeError = {
     },
     password: {
         valueMissing: "El campo contraseña no puede estar vacío",
+    },
+    categoria: {
+        valueMissing: "El campo categoria no puede estar vacío",
+    },
+    price: {
+        valueMissing: "El campo precio no puede estar vacío"
     }
 }
 

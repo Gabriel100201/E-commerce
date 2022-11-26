@@ -20,6 +20,17 @@
     font-weight: bold;
     margin-bottom: 20px;
 }
+.form__input--invalid{
+    width: 100%;
+    border: 1px solid #f00;
+    background-color: #ff000011;
+    height: 40px;
+    margin-top: 15px;
+    padding: 5px 15px 5px 15px;
+}
+.form__container{
+    width: 100%;
+}
 #input-file{
     border-bottom: none;
     margin-top: 7px;

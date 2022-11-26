@@ -1,117 +1,116 @@
 {
-    "productos": [
-      {
-        "nombre": "Al-Rihla 2022",
-        "precio": "1000",
-        "imagen": "assets/22.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "Telstar 18",
-        "precio": "1000",
-        "imagen": "assets/18.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "Brazuca",
-        "precio": "1000",
-        "imagen": "assets/14.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "Jabulani",
-        "precio": "1000",
-        "imagen": "assets/10.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "Teamgeist",
-        "precio": "1000",
-        "imagen": "assets/6.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "Fevernova",
-        "precio": "1000",
-        "imagen": "assets/2.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      }
-    ],
-    "historicos": [
-      {
-        "nombre": "Tricolore",
-        "precio": "1000",
-        "imagen": "assets/98.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "Strusco Único",
-        "precio": "1000",
-        "imagen": "assets/90.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "Tango",
-        "precio": "1000",
-        "imagen": "assets/78.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "Telstar",
-        "precio": "1000",
-        "imagen": "assets/22.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "T-Ball Duplo",
-        "precio": "1000",
-        "imagen": "assets/T.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "Mitre Delta",
-        "precio": "1000",
-        "imagen": "assets/mitre.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      }
-    ],
-    "ligas": [
-      {
-        "nombre": "Argentina",
-        "precio": "1000",
-        "imagen": "assets/arg.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "Española",
-        "precio": "1000",
-        "imagen": "assets/spain.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "Francesa",
-        "precio": "1000",
-        "imagen": "assets/one.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "Italiana",
-        "precio": "1000",
-        "imagen": "assets/calcio.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "Inglesa",
-        "precio": "1000",
-        "imagen": "assets/premier.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      },
-      {
-        "nombre": "Champions League",
-        "precio": "1000",
-        "imagen": "assets/champions.jpg",
-        "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
-      }
-    ]
-  }
-  
+  "productos": [
+    {
+      "nombre": "Al-Rihla 2022",
+      "precio": "1000",
+      "imagen": "assets/22.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "Telstar 18",
+      "precio": "1000",
+      "imagen": "assets/18.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "Brazuca",
+      "precio": "1000",
+      "imagen": "assets/14.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "Jabulani",
+      "precio": "1000",
+      "imagen": "assets/10.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "Teamgeist",
+      "precio": "1000",
+      "imagen": "assets/6.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "Fevernova",
+      "precio": "1000",
+      "imagen": "assets/2.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    }
+  ],
+  "historicos": [
+    {
+      "nombre": "Tricolore",
+      "precio": "1000",
+      "imagen": "assets/98.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "Strusco Único",
+      "precio": "1000",
+      "imagen": "assets/90.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "Tango",
+      "precio": "1000",
+      "imagen": "assets/78.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "Telstar",
+      "precio": "1000",
+      "imagen": "assets/22.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "T-Ball Duplo",
+      "precio": "1000",
+      "imagen": "assets/T.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "Mitre Delta",
+      "precio": "1000",
+      "imagen": "assets/mitre.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    }
+  ],
+  "ligas": [
+    {
+      "nombre": "Argentina",
+      "precio": "1000",
+      "imagen": "assets/arg.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "Española",
+      "precio": "1000",
+      "imagen": "assets/spain.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "Francesa",
+      "precio": "1000",
+      "imagen": "assets/one.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "Italiana",
+      "precio": "1000",
+      "imagen": "assets/calcio.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "Inglesa",
+      "precio": "1000",
+      "imagen": "assets/premier.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    },
+    {
+      "nombre": "Champions League",
+      "precio": "1000",
+      "imagen": "assets/champions.jpg",
+      "id": "f7c8771f-1e35-487b-bdcc-1ee2f413327c"
+    }
+  ]
+}

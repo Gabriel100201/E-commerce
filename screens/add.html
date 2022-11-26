@@ -33,13 +33,28 @@
             <h3 class="form__titulo">Añadir Producto</h3>
             <div class="form__file-container">
                 <h4 class="form__text">Elija la imagen para su producto</h4>
-                <input class="form__input" type="file" id="input-file">
+                <input required class="add-input form__input" type="file" id="input-img" accept="image/*">
             </div>
-            <input class="form__input" type="text" placeholder="Categoria">
-            <input class="form__input" type="text" placeholder="Nombre">
-            <input class="form__input" type="text" placeholder="Precio">
-            <input class="form__input" type="text" placeholder="Descripción">
-            <input class="form__button" type="submit">
+            <span class="form__container">
+                <input required data-tipo="categoria" class="add-input form__input form__input-cat" type="text" placeholder="Categoria">
+                <h4 class="form__input-error"></h4>
+            </span>
+            <span class="form__container">
+                <input required data-tipo="name" class="add-input form__input form__input-nam" type="text" placeholder="Nombre" maxlength="20">
+                <h4 class="form__input-error"></h4>
+            </span>
+            <span class="form__container">
+                <input required data-tipo="price" class="add-input form__input form__input-pri" type="number" placeholder="Precio">
+                <h4 class="form__input-error"></h4>
+            </span>
+            <span class="form__container">
+                <input required data-tipo="mensaje" class="add-input form__input form__input-des" type="text" placeholder="Descripción" maxlength="150">
+                <h4 class="form__input-error"></h4>
+            </span>
+            <span class="form__container">
+                <input required data-tipo="submit" class="add-input form__button" type="submit">
+                <h4 class="form__input-error"></h4>
+            </span>
         </form>
     </main>
 
@@ -86,5 +101,6 @@
         </div>
     </footer>
 <script src="../validacion.js" type="module"></script>
+<script src="../add-product.js"></script>
 </body>
 </html>
