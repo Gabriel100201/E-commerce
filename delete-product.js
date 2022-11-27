@@ -1,24 +1,24 @@
+/* ESPERA PARA QUE CARGUEN LOS PRODUCTOS */
 const espera = () => {
     return fetch("http://localhost:3000/mundiales").then((respuesta) => respuesta.json());
 }
 espera().then(() => {
     eliminar();
-    console.log("espera lista");
 })
 
+/* AÑADIR EVENTO AL ICONO DE BASURA */
 const eliminar = () => {
     const trash = document.querySelectorAll(".filtro__link-trash");
-    console.log(trash);
     trash.forEach((ico) => {
         ico.addEventListener("click", eliminarClient);
     });
 }
 
+/* ELIMINAR PRODUCTO DE TODAS LAS CATEGORIAS */
 function eliminarClient(event){
     const icoId = event.target;
     let link = icoId.parentElement;
     link = link.id;
-    console.log(link);
     eliminarCliente("mundiales", link).then((resolve) =>{
         console.log(resolve);
     });
@@ -30,6 +30,7 @@ function eliminarClient(event){
     });
 }
 
+/* PETICIÓN PARA ELIMINAR CLIENTE */
 const eliminarCliente = (categoria, id) => {
     return fetch(`http://localhost:3000/${categoria}/${id}`, {
       method: "DELETE",

@@ -2,7 +2,7 @@ const productoHTML = (nombre, precio, img, id) => {
 const product = `
         <div class="product__filtro">
             <a class="filtro__link filtro__link-trash" id="${nombre}"><i class="fa-solid fa-trash filtro__ico"></i></a>                
-            <a class="filtro__link" href="#"><i class="fa-solid fa-pencil filtro__ico"></i></a>
+            <a class="filtro__link filtro__link-pencil" href="edit.html?id=${nombre}" id="${nombre}"><i class="fa-solid fa-pencil filtro__ico"></i></a>
         </div>
         <img class="producto__img" src="${img}">
         <h3 class="producto__nombre">${nombre}</h3>

@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/section-productos.css">
-    <link rel="stylesheet" href="../styles/section-todos.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/add.css">
     <script src="https://kit.fontawesome.com/07c964647a.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Todos</title>
+    <title>Añadir Producto</title>
 </head>
 <body>
-
+    
     <header class="header">
         <a href="../index.html"><img class="header__logo" src="../assets/Recurso 2.svg"></a>
         <div class="header__searcher">
@@ -28,23 +28,37 @@
         <button class="searcher__button--mobile"><i class="fa-solid fa-magnifying-glass searcher__lupa"></i></button>
     </header>
 
-    <main class="sections">
-        <section class="section">
-            <div class="section__header">
-                <h2 class="section__titulo">Todos los productos</h2>
-                <div>
-                    <a class="section__link" href="add.html">
-                        <button class="section__button">Agregar Producto</button>
-                    </a>
-                </div>
+    <main class="main">
+        <form class="main__form">
+            <h3 class="form__titulo">Añadir Producto</h3>
+            <div class="form__file-container">
+                <h4 class="form__text">Elija la imagen para su producto</h4>
+                <input required class="add-input form__input" type="file" id="input-img" accept="image/*">
             </div>
-            <div class="sections__products-container product-todos">
-                <!-- AQUI VAN LOS PRODUCTOS -->
-            </div>
-        </section>
+            <span class="form__container">
+                <input required data-tipo="categoria" class="add-input form__input form__input-cat" type="text" placeholder="Categoria">
+                <h4 class="form__input-error"></h4>
+            </span>
+            <span class="form__container">
+                <input required data-tipo="name" class="add-input form__input form__input-nam" type="text" placeholder="Nombre" maxlength="20">
+                <h4 class="form__input-error"></h4>
+            </span>
+            <span class="form__container">
+                <input required data-tipo="price" class="add-input form__input form__input-pri" type="number" placeholder="Precio">
+                <h4 class="form__input-error"></h4>
+            </span>
+            <span class="form__container">
+                <input required data-tipo="mensaje" class="add-input form__input form__input-des" type="text" placeholder="Descripción" maxlength="150">
+                <h4 class="form__input-error"></h4>
+            </span>
+            <span class="form__container">
+                <input required data-tipo="submit" class="add-input form__button" type="submit">
+                <h4 class="form__input-error"></h4>
+            </span>
+        </form>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer--no-margin">
         <div class="footer__img-container">
             <img class="img-container__img" src="../assets/Recurso 2.svg">
         </div>
@@ -86,10 +100,9 @@
             <h4 class="desarollo__texto">Desarrollado por Gabriel Funes. 2022</h4>
         </div>
     </footer>
-<script src="../products-todos.js"></script>
 <script src="../validacion.js" type="module"></script>
-<script src="../delete-product.js"></script>
-<script src="../edit-producto.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+<script src="../loadIndo.js"></script>
+<script src="../enviar-edit.js"></script>
 </body>
 </html>
