@@ -7,7 +7,7 @@ const insertProduct = (categoria ,nombre, precio, imagen) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ nombre, precio, imagen}),
+      body: JSON.stringify({ nombre, precio, imagen, id: nombre}),
     });
   };
 

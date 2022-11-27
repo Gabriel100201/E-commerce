@@ -18,7 +18,7 @@ const crearProducto = (nombre, precio, img) => {
 }
 
 const listaMundiales = () => {
-    return fetch("http://localhost:3000/productos").then((response) => response.json());
+    return fetch("http://localhost:3000/mundiales").then((response) => response.json());
 }
 const listaHistoricos = () => {
     return fetch("http://localhost:3000/historicos").then((response) => response.json());
