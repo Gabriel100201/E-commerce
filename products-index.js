@@ -1,3 +1,12 @@
+import { fetchservices } from "./fetch.js";
+
+const crearProducto = (nombre, precio, img) => {
+    const content = productoHTML(nombre, precio, img);
+    const div = document.createElement("div");
+    div.classList.add("sections__producto");
+    div.innerHTML = content;
+    return div;
+}
 const productoHTML = (nombre, precio, img) => {
     const producto = `
         <img class="producto__img" src="${img}">
@@ -8,46 +17,26 @@ const productoHTML = (nombre, precio, img) => {
         </a>`;
     return producto;
 }
-
-const crearProducto = (nombre, precio, img) => {
-    const content = productoHTML(nombre, precio, img);
-    const div = document.createElement("div");
-    div.classList.add("sections__producto");
-    div.innerHTML = content;
-    return div;
-}
-
-const listaMundiales = () => {
-    return fetch("http://localhost:3000/mundiales").then((response) => response.json());
-}
-const listaHistoricos = () => {
-    return fetch("http://localhost:3000/historicos").then((response) => response.json());
-}
-const listaLigas = () => {
-    return fetch("http://localhost:3000/ligas").then((response) => response.json());
-}
-
-
-listaMundiales()
+fetchservices.listaMundiales()
     .then((data) => {
     data.forEach((datos) => {
-        const nuevoDiv = crearProducto(datos["nombre"], datos["precio"], datos["imagen"]);
+        const nuevoDiv = crearProducto(datos["nombre"], datos["precio"], datos["img"]);
         const container = document.querySelector(".sections__products-container");
         container.appendChild(nuevoDiv);
     })
 });
-listaHistoricos()
+fetchservices.listaHistoricos()
     .then((data) => {
     data.forEach((datos) => {
-        const nuevoDiv = crearProducto(datos["nombre"], datos["precio"], datos["imagen"]);
+        const nuevoDiv = crearProducto(datos["nombre"], datos["precio"], datos["img"]);
         const container = document.querySelector(".sections__products-container-2");
         container.appendChild(nuevoDiv);
     })
 });
-listaLigas()
+fetchservices.listaLigas()
     .then((data) => {
     data.forEach((datos) => {
-        const nuevoDiv = crearProducto(datos["nombre"], datos["precio"], datos["imagen"]);
+        const nuevoDiv = crearProducto(datos["nombre"], datos["precio"], datos["img"]);
         const container = document.querySelector(".sections__products-container-3");
         container.appendChild(nuevoDiv);
     })

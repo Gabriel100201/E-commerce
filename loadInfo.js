@@ -1,11 +1,10 @@
-const obtenerInformacion = (data, categ) => {
+const obtenerInformacion = (data) => {
     const img = document.querySelector("#input-img");
-    const cat = document.querySelector(".form__input-cat");
     const nam = document.querySelector(".form__input-nam");
     const pri = document.querySelector(".form__input-pri");
-    cat.value = categ;
     nam.value = data["nombre"];
     pri.value = data["precio"];
+    img.value = data["img"];
 };
 
 const url = new URL(window.location);

@@ -2,13 +2,11 @@ import { fetchservices } from "./fetch.js";
 
 const productoHTML = (nombre, precio, img, id, cat) => {
 const product = `
-        <div class="product__filtro">
-            <a class="filtro__link filtro__link-trash" id="${id}"><i id="${cat}" class="fa-solid fa-trash filtro__ico"></i></a>                
-            <a class="filtro__link filtro__link-pencil" id="${id}" href="edit.html?id=${id}&cat=${cat}"><i class="fa-solid fa-pencil filtro__ico"></i></a>
-        </div>
         <img class="producto__img" src="${img}">
         <h3 class="producto__nombre">${nombre}</h3>
         <h3 class="producto__precio">${precio}</h3>
+        <a class="producto__link" href="#">
+            <h3 class="link__titulo">Ver producto</h3>
         </a>`
     return product;
 }

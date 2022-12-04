@@ -29,6 +29,12 @@
         </div>
         <a href="screens/login.html"><button class="header__login-button">Login</button></a>
         <button class="searcher__button--mobile"><i class="fa-solid fa-magnifying-glass searcher__lupa"></i></button>
+        <button class="searcher__menu--mobile searcher__menu"><i class="fa-solid fa-bars searcher__menu"></i></button>
+        <div class="header__searcher-mobile">
+            <input class="searcher__input searcher__input--mobile" type="text" placeholder="¿Qué desea buscar?">
+            <button class="searcher__button searcher__button-search--mobile"><i class="fa-solid fa-magnifying-glass searcher__lupa"></i></button>
+        </div>
+
     </header>
 
     <main class="sections">
@@ -41,7 +47,7 @@
             <div class="section__header">
                 <h2 class="section__titulo" id="offert">Mundiales</h2>
                 <div>
-                    <a class="section__link" href="screens/todos.html">
+                    <a class="section__link" href="screens/todos-mostrar.html">
                         <h4 class="link__texto">Ver Todos</h4>
                         <i class="fa-solid fa-arrow-right link__arrow"></i>
                     </a>
@@ -55,7 +61,7 @@
             <div class="section__header">
                 <h2 class="section__titulo">Historicos</h2>
                 <div>
-                    <a class="section__link" href="#">
+                    <a class="section__link" href="screens/todos-mostrar.html">
                         <h4 class="link__texto">Ver Todos</h4>
                         <i class="fa-solid fa-arrow-right link__arrow"></i>
                     </a>
@@ -69,7 +75,7 @@
             <div class="section__header">
                 <h2 class="section__titulo">Destacados de cada liga</h2>
                 <div>
-                    <a class="section__link" href="#">
+                    <a class="section__link" href="screens/todos-mostrar.html">
                         <h4 class="link__texto">Ver Todos</h4>
                         <i class="fa-solid fa-arrow-right link__arrow"></i>
                     </a>
@@ -123,8 +129,8 @@
             <h4 class="desarollo__texto">Desarrollado por Gabriel Funes. 2022</h4>
         </div>
     </footer>
-<script src="../validacion.js" type="module"></script>
-<script src="products-index.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+<script src="products-index.js" type="module"></script>
+<script src="validation/validacion.js" type="module"></script>
+<script src="search.js" type="module"></script>
 </body>
 </html>

@@ -1,15 +1,7 @@
+import { fetchservices } from "./fetch.js";
+
 const button = document.querySelector(".form__button");
 button.addEventListener("click", reciveImg); 
-
-const insertProduct = (categoria ,nombre, precio, imagen) => {
-    return fetch(`http://localhost:3000/${categoria}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ nombre, precio, imagen, id: nombre}),
-    });
-  };
 
 function reciveImg(event) {
     event.preventDefault();
@@ -18,7 +10,7 @@ function reciveImg(event) {
     const reader = new FileReader();
     reader.addEventListener("load", function () {
       // convierte la imagen a una cadena en base64
-        imgInput = reader.result;
+        let imgInput = reader.result;
         crearProducto(imgInput);
     }, false);
     if (file) {
@@ -31,9 +23,10 @@ function reciveImg(event) {
       const nombre = document.querySelector(".form__input-nam").value;
       const precio = document.querySelector(".form__input-pri").value;
   /*     const descripcion = document.querySelector(".form__input-des"); */
-      insertProduct(categoria, nombre, precio, img).then(() => {
+      fetchservices.insertProduct(categoria, nombre, precio, img).then(() => {
           console.log("Producto creado con exito");
-      })
+      });
+      window.location.href = "todos.html";
 }
 
 

@@ -1,6 +1,8 @@
+import { fetchservices } from "./fetch.js";
+
 /* ESPERA PARA QUE CARGUEN LOS PRODUCTOS */
 const espera = () => {
-    return fetch("http://localhost:3000/mundiales").then((respuesta) => respuesta.json());
+    return fetch("http://localhost:3000/ligas").then((respuesta) => respuesta.json());
 }
 espera().then(() => {
     eliminar();
@@ -17,22 +19,10 @@ const eliminar = () => {
 /* ELIMINAR PRODUCTO DE TODAS LAS CATEGORIAS */
 function eliminarClient(event){
     const icoId = event.target;
+    console.log(icoId);
+    let cat = icoId.id;
     let link = icoId.parentElement;
     link = link.id;
-    eliminarCliente("mundiales", link).then((resolve) =>{
-        console.log(resolve);
-    });
-    eliminarCliente("historicos", link).then((resolve) =>{
-        console.log(resolve);
-    });
-    eliminarCliente("ligas", link).then((resolve) =>{
-        console.log(resolve);
-    });
-}
+    fetchservices.eliminarCliente(cat, link);
+} 
 
-/* PETICIÓN PARA ELIMINAR CLIENTE */
-const eliminarCliente = (categoria, id) => {
-    return fetch(`http://localhost:3000/${categoria}/${id}`, {
-      method: "DELETE",
-    });
-  };

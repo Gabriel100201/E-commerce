@@ -1,3 +1,5 @@
+import { fetchservices } from "./fetch.js";
+
 const enviarEdit = document.querySelector(".form__button");
 enviarEdit.addEventListener("click", reciveImg)
 
@@ -8,7 +10,7 @@ function reciveImg(event) {
   const reader = new FileReader();
   reader.addEventListener("load", function () {
     // convierte la imagen a una cadena en base64
-      imgInput = reader.result;
+      let imgInput = reader.result;
       actualizarDatos(imgInput);
   }, false);
   if (file) {
@@ -17,13 +19,14 @@ function reciveImg(event) {
 }
 
 function actualizarDatos(imgInput){
-  let cat = document.querySelector(".form__input-cat");
   let nombre = document.querySelector(".form__input-nam");
   let precio = document.querySelector(".form__input-pri");
-  cat = cat.value;
   nombre = nombre.value;
   precio = precio.value;
   const imagen = imgInput;
-
-  
+  const url = new URL(window.location);
+  const cat = url.searchParams.get("cat");
+  const id = url.searchParams.get("id");
+  fetchservices.actualizarProduct(precio, nombre, id, imagen, cat);
+  window.location.href = "todos.html";
 }
